@@ -24,7 +24,7 @@ let interval;
 let myApp = [];
 
 window.onload = () => {
-    fetch("https://nil1729.github.io/QuizApp/quizdata.json")
+    fetch("https://raw.githubusercontent.com/perng/QuizApp/refs/heads/master/quizdata.json")
         .then(function(resp) {
             return resp.json();
         })
@@ -84,7 +84,7 @@ function timeIsUp() {
 }
 
 function startTimer() {
-    let timeLimit = 15;
+    let timeLimit = 60;
     remainingTime.innerHTML = timeLimit;
     remainingTime.classList.remove('less-time');
     interval = setInterval(() => {
