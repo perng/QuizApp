@@ -1,48 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Quiz Login Form</title>
-    <link rel="stylesheet" type="text/css" href="css/login.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>複習題</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <img class="wave" src="img/wave.png">
-    <div class="container">
-        <div class="img">
-            <img src="img/bg.svg">
+
+    <div class="loader">
+        <svg id="logo" width="935" height="158" viewBox="0 0 935 158" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle">
+            <title id="logoTitle">白話人工智慧</title>
+            <rect width="935" height="158" fill="none"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="88" font-family="Segoe UI, PingFang TC, Microsoft JhengHei, sans-serif" letter-spacing="12">白話人工智慧</text>
+        </svg>
+    </div>
+
+    <div class="quiz-home-box custom-box">
+        <div class="quiz-app-name">
+            <h2>複習題</h2>
         </div>
-        <div class="login-content">
-            <form action="javascript:void(0)">
-                <img src="img/avatar.svg">
-                <h2 class="title">Welcome To <span>The Quiz App</span></h2>
-                <div class="input-div one">
-                    <div class="i">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="div">
-                        <h5>Username</h5>
-                        <input type="text" class="input">
-                    </div>
-                </div>
-                <div class="input-div pass">
-                    <div class="i">
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <div class="div">
-                        <h5>Password</h5>
-                        <input type="password" class="input">
-                    </div>
-                </div>
-                <a href="javascript:void(0)">Forgot Password?</a>
-                <input type="submit" class="btn" value="Login" onclick="myFunction()">
-            </form>
+        <h4>每題有六十秒時間回答</h4>
+        <p class="chapter-prompt">請選擇要練習的章節</p>
+        <div class="chapter-list">
+            <button class="chapter-btn btn" type="button" data-chapter="1">第 1 章</button>
+            <button class="chapter-btn btn" type="button" data-chapter="2">第 2 章</button>
+            <button class="chapter-btn btn" type="button" data-chapter="3">第 3 章</button>
+            <button class="chapter-btn btn" type="button" data-chapter="4">第 4 章</button>
+            <button class="chapter-btn btn" type="button" data-chapter="5">第 5 章</button>
+            <button class="chapter-btn btn" type="button" data-chapter="6">第 6 章</button>
+            <button class="chapter-btn btn" type="button" data-chapter="7">第 7 章</button>
+            <button class="chapter-btn btn" type="button" data-chapter="8">第 8 章</button>
         </div>
     </div>
-    <script type="text/javascript" src="js/login.js"></script>
+
+    <div class="quiz-box custom-box">
+        <div class="quiz-app-name">
+            <h2>複習題</h2>
+        </div>
+        <div class="stats">
+            <div class="quiz-time">
+                <div class="remaining-time"></div>
+                <span class="time-up-text">時間到</span>
+            </div>
+            <div class="score-board">
+                <span class="score-text">分數: </span>
+                <span class="correct-answers"></span>
+            </div>
+        </div>
+        <div class="question-box">
+            <div class="current-question-num">
+
+            </div>
+            <div class="question-text">
+
+            </div>
+        </div>
+        <div class="option-box">
+
+        </div>
+        <div class="answer-description">
+
+        </div>
+        <div class="next-question">
+            <button type="button" class="next-question-btn btn">Next Question</button>
+            <button type="button" class="see-result-btn btn">See Your Result</button>
+        </div>
+    </div>
+
+    <div class="quiz-over-box custom-box">
+        <h1>Quiz Results</h1>
+        <h4>Total Question: <span class="total-questions"></span></h4>
+        <h4>Attempt: <span class="total-attempt"></span></h4>
+        <h4>Correct: <span class="total-correct"></span></h4>
+        <h4>Wrong: <span class="total-wrong"></span></h4>
+        <h4>Percentage: <span class="percentage"></span></h4>
+        <button type="button" class="start-again-quiz-btn btn">End The Quiz</button>
+        <button type="button" class="go-to-home-btn btn">Go To Home</button>
+    </div>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
