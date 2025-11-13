@@ -12,7 +12,7 @@ const quizOverBox = document.querySelector('.quiz-over-box');
 const quizHomeBox = document.querySelector('.quiz-home-box');
 const startAgainQuizBtn = document.querySelector('.start-again-quiz-btn');
 const goHomeBtn = document.querySelector('.go-to-home-btn');
-const startQuizBtn = document.querySelector('.start-quiz-btn');
+const chapterButtons = document.querySelectorAll('.chapter-btn');
 
 let attempt = 0;
 let myArray = [];
@@ -24,16 +24,6 @@ let interval;
 let myApp = [];
 
 window.onload = () => {
-    fetch("https://raw.githubusercontent.com/perng/QuizApp/refs/heads/master/quizdata.json")
-        .then(function(resp) {
-            return resp.json();
-        })
-        .then(function(data) {
-            for (let i = 0; i < data.length; i++) {
-                // console.log(data[i]);
-                myApp.push({ question: data[i].question, options: data[i].options, answer: data[i].answer, description: data[i].description });
-            }
-        });
     setTimeout(() => {
         document.querySelector(".loader").style.display = "none";
         document.querySelector(".loader").remove();
@@ -42,6 +32,13 @@ window.onload = () => {
 };
 
 function generateRandomQuestion() {
+    if (!myApp.length) {
+        return;
+    }
+    if (myArray.length === myApp.length) {
+        quizOver();
+        return;
+    }
     const randomNumber = Math.floor(Math.random() * myApp.length);
     let hitDuplicate = 0;
     if (myArray.length == 0) {
@@ -65,10 +62,20 @@ function generateRandomQuestion() {
 
 
 function resetQuiz() {
+    stopTimer();
     attempt = 0;
     myArray = [];
     score = 0;
     number = 0;
+    questionIndex = 0;
+    hideTimeUpText();
+    hideNextQuestionBtn();
+    hideAnswerDescription();
+    seeResultsBtn.classList.remove('show');
+    questionText.innerHTML = "";
+    optionBox.innerHTML = "";
+    currentQuestionNum.innerHTML = "";
+    correctAnswers.innerHTML = score;
 }
 
 function timeIsUp() {
@@ -204,12 +211,14 @@ function load() {
 }
 
 function nextQuestion() {
-    startTimer();
-    generateRandomQuestion()
+    if (!myApp.length) {
+        return;
+    }
     hideNextQuestionBtn();
     hideAnswerDescription();
-    hideTimeUpText()
-
+    hideTimeUpText();
+    startTimer();
+    generateRandomQuestion();
 }
 
 function quizResult() {
@@ -228,18 +237,61 @@ seeResultsBtn.addEventListener('click', () => {
 })
 nextQuestionBtn.addEventListener("click", nextQuestion);
 
+function toggleChapterButtonsDisabled(state) {
+    chapterButtons.forEach((btn) => {
+        btn.disabled = state;
+    });
+}
+
+function loadChapterData(chapterNumber) {
+    toggleChapterButtonsDisabled(true);
+    const chapterPath = `./ch${chapterNumber}.json`;
+    fetch(chapterPath)
+        .then((resp) => {
+            if (!resp.ok) {
+                throw new Error(`Failed to load ${chapterPath}`);
+            }
+            return resp.json();
+        })
+        .then((data) => {
+            myApp = data.map((item) => ({
+                question: item.question,
+                options: item.options,
+                answer: item.answer,
+                description: item.description
+            }));
+            resetQuiz();
+            quizHomeBox.classList.remove('show');
+            quizOverBox.classList.remove('show');
+            quizBox.classList.add('show');
+            scoreBoard();
+            nextQuestion();
+        })
+        .catch((error) => {
+            console.error(error);
+            alert("題目載入失敗，請稍後再試。");
+            quizHomeBox.classList.add('show');
+        })
+        .finally(() => {
+            toggleChapterButtonsDisabled(false);
+        });
+}
+
 startAgainQuizBtn.addEventListener('click', () => {
     location.replace("./end.html")
 })
 
 goHomeBtn.addEventListener('click', () => {
+    quizBox.classList.remove('show');
     quizOverBox.classList.remove('show');
     quizHomeBox.classList.add('show');
+    myApp = [];
     resetQuiz();
 })
 
-startQuizBtn.addEventListener('click', () => {
-    quizHomeBox.classList.remove('show');
-    quizBox.classList.add('show');
-    nextQuestion();
-})
+chapterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const chapterNumber = button.getAttribute('data-chapter');
+        loadChapterData(chapterNumber);
+    });
+});

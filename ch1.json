@@ -1,6 +1,6 @@
 [
     {
-      "question": "根據文本，圖靈測試 (Turing Test) 是用來判斷什麼的？",
+      "question": "圖靈測試 (Turing Test) 的目的為何？",
       "options": [
         "電腦的計算速度",
         "機器是否擁有人類智慧",
@@ -8,10 +8,10 @@
         "AI 繪圖的精準度"
       ],
       "answer": 1,
-      "description": "圖靈測試是說如果一個人和一台機器用文字聊天，如果這個人無法分辨和他聊天的是機器還是人，那麼就表示這台機器有了智慧。"
+      "description": "圖靈測試透過人與機器的文字對話，觀察人類是否能辨認出對方是機器，以評估機器是否展現出類似人類的智慧。"
     },
     {
-      "question": "文本中提到 AI 的「學習能力」特質，其主要的學習方式是什麼？",
+      "question": "AI 的「學習能力」主要仰賴哪種方式？",
       "options": [
         "像人類一樣理解抽象概念",
         "透過觀察大量的例子来找出規律",
@@ -19,10 +19,10 @@
         "透過與人類聊天来學習"
       ],
       "answer": 1,
-      "description": "AI能從大量數據中學習...不是像人類那樣理解概念，而是通過觀察大量的例子來找出規律。比如，當我們給AI看一萬張貓咪的照片時，它會仔細分析每張照片中的特徵...逐漸學會了「貓」的特徵。"
+      "description": "現代 AI 透過大量資料找出模式與規律，因此能在新情況下進行推論或預測。"
     },
     {
-      "question": "文中提到 AI 的「模式識別」能力，但也指出其局限性，下列何者是該局限性的例子？",
+      "question": "AI 的模式識別能力可能出現的局限是？",
       "options": [
         "AI 無法分辨貓和狗",
         "AI 可能找出「穿藍色襪子，股市就會上漲」這種無實際意義的關聯",
@@ -30,10 +30,10 @@
         "AI 下棋時不知道自己在玩遊戲"
       ],
       "answer": 1,
-      "description": "這種能力有時也會鬧出笑話，比如「每次我穿藍色襪子，股市就會上漲」這種莫名其妙的關聯。這提醒我們，現在的AI雖然很會找規律，但它卻無法分辨這些規律是否有實際意義。"
+      "description": "AI 會在資料中搜尋關聯，但不一定懂得判斷是否有實際意義，因此可能誤判巧合為真實規律。"
     },
     {
-      "question": "關於「生成式 AI」和「傳統 AI」的區別，下列敘述何者錯誤？",
+      "question": "關於「生成式 AI」和「傳統 AI」的差別，下列敘述何者錯誤？",
       "options": [
         "傳統 AI 傾向給出明確答案，生成式 AI 則是創造全新內容",
         "傳統 AI 學習「分類」和「預測」，生成式 AI 學習「創造」",
@@ -41,16 +41,16 @@
         "傳統 AI 應用於繪畫創作，生成式 AI 應用於垃圾郵件過濾"
       ],
       "answer": 3,
-      "description": "傳統 AI 主要用在「判斷」和「預測」的場景，比如垃圾郵件過濾、股票預測。而生成式 AI 則用在「創造」的場景，比如寫作、繪畫、音樂創作。因此，(D) 選項的描述是相反的。"
+      "description": "傳統 AI 多用於分類與預測任務，如垃圾郵件過濾；生成式 AI 則擅長產生文字、圖像等新內容，因此 (D) 描述與實際應用相反。"
     },
     {
-      "question": "文本中提到 GPT 裡的 \"G\" 代表什麼？",
+      "question": "在 GPT 這個縮寫裡，字母 \"G\" 代表什麼？",
       "options": ["Google", "Generative (生成式)", "General (通用)", "Good (好的)"],
       "answer": 1,
-      "description": "這就是 GPT (Generative Pre-trained Transformer) 裡的 'G'，它和傳統的 AI 有很大的不同。"
+      "description": "GPT 代表 Generative Pre-trained Transformer，其中 \"Generative\" 指的是模型能生成新的內容。"
     },
     {
-      "question": "下列哪一項不屬於文本所定義的人工智慧範疇？",
+      "question": "下列哪一項不屬於人工智慧的範例？",
       "options": [
         "一個能觀察觀影習慣並推薦電影的系統",
         "機器學習 (Machine Learning)",
@@ -58,10 +58,10 @@
         "大語言模型 (Large Language Model)"
       ],
       "answer": 2,
-      "description": "一個系統只會按照你設定的類型（如日本片、愛情片、動作片）機械式地列出清單，這不是AI。另一個系統卻能觀察你的觀影習慣...這才是真正的AI！"
+      "description": "若系統只依照固定的條件輸出清單，沒有學習或推理能力，就不被視為人工智慧。"
     },
     {
-      "question": "機器學習 (Machine Learning) 是如何學習的？",
+      "question": "機器學習 (Machine Learning) 如何運作？",
       "options": [
         "告訴電腦所有明確的規則",
         "讓電腦從資料中學習規律，並用規律做決策",
@@ -69,10 +69,10 @@
         "機器學習是達成 AI 的唯一方法"
       ],
       "answer": 1,
-      "description": "機器學習(Machine Learning, ML)是人工智慧的一個分支，它讓電腦學會從資料中學習規律，並且用這些規律来做出決策。"
+      "description": "機器學習讓模型從資料中歸納規則，再應用於新的案例做出預測或決策。"
     },
     {
-      "question": "哪一種機器學習方式，像是「有老師天天盯著你唸書寫考卷」，需要提供題目（輸入）和正確答案（標籤）？",
+      "question": "哪一種機器學習方式需要提供輸入與對應的正確標籤？",
       "options": [
         "監督式學習 (Supervised Learning)",
         "非監督式學習 (Unsupervised Learning)",
@@ -80,10 +80,10 @@
         "自監督學習 (Self-supervised Learning)"
       ],
       "answer": 0,
-      "description": "監督式學習...就像是有老師天天盯著你唸書寫考卷。老師會給你題目（輸入），還會給你正確答案（標籤）。"
+      "description": "監督式學習使用成對的輸入與標籤資料，讓模型學會將輸入對應到正確答案。"
     },
     {
-      "question": "哪一種機器學習方式，像是「從混沌的數據宇宙中，找出隱藏的規律和模式」，不需要資料標籤？",
+      "question": "哪一種機器學習方式能在沒有資料標籤的情況下找出隱藏的規律？",
       "options": [
         "監督式學習 (Supervised Learning)",
         "非監督式學習 (Unsupervised Learning)",
@@ -91,10 +91,10 @@
         "自監督學習 (Self-supervised Learning)"
       ],
       "answer": 1,
-      "description": "非監督式學習就是這樣，從混沌的數據宇宙中，找出隱藏的規律和模式。不需要有人告訴你規則。"
+      "description": "非監督式學習依靠未標記的資料，透過聚類或降維等方法找出資料中的結構。"
     },
     {
-      "question": "哪一種機器學習方式，被比喻為「AI界的周伯通」，會自己想出學習方法，例如把句子遮住幾個字來練習填空？",
+      "question": "哪一種機器學習方式會讓模型自己設計任務，例如遮住句子部分再預測缺漏的詞？",
       "options": [
         "監督式學習 (Supervised Learning)",
         "非監督式學習 (Unsupervised Learning)",
@@ -102,10 +102,10 @@
         "自監督學習 (Self-supervised Learning)"
       ],
       "answer": 3,
-      "description": "自監督學習...這就像是一個超級自律的學生...他會把課本裡的句子遮住幾個字，然後自己試著填空...這種學習方式就是讓電腦自己給資料打標籤，然後自己學習。"
+      "description": "自監督學習會從原始資料中製造訓練目標，例如遮住部分內容再預測，以建立模型的理解能力。"
     },
     {
-      "question": "在生物神經元結構中，負責接收來自其他神經元訊息的「接收天線」是？",
+      "question": "在生物神經元結構中，負責接收來自其他神經元訊息的部分是？",
       "options": [
         "樹突 (dendrites)",
         "神經元細胞體 (neuron cell body)",
@@ -113,10 +113,10 @@
         "權重 (weights)"
       ],
       "answer": 0,
-      "description": "樹突（dendrites）：想像這是神經元的「觸手」或「接收天線」！...樹突負責接收來自其他神經元的訊息。"
+      "description": "樹突是神經元用來接收其他神經元訊號的結構。"
     },
     {
-      "question": "在人工神經網路中，「參數」主要來自哪兩個部分？",
+      "question": "在人工神經網路中，參數主要來自哪兩個部分？",
       "options": [
         "輸入層與輸出層",
         "權重 (weights) 和偏差值 (bias)",
@@ -124,10 +124,10 @@
         "卷積層與池化層"
       ],
       "answer": 1,
-      "description": "一個神經網路的參數數量，主要來自於兩個部分：權重（weights）和偏差值（bias）。"
+      "description": "神經網路的可調整參數主要包含連結的權重與各節點的偏差值。"
     },
     {
-      "question": "在訓練神經網路時，用來衡量系統推薦結果有多離譜（例如大熱天推薦薑母鴨）的機制，稱為什麼？",
+      "question": "在訓練神經網路時，用來衡量模型預測與真實答案差距的機制稱為什麼？",
       "options": [
         "正向傳遞 (Forward Propagation)",
         "損失函數 (Loss Function)",
@@ -135,10 +135,10 @@
         "梯度下降 (Gradient Descent)"
       ],
       "answer": 1,
-      "description": "假設系統在大熱天推薦了薑母鴨，顧客立刻抗議...這個「差評」就是所謂的「損失函數」(Loss Function)，用來衡量系統推薦得有多離譜。"
+      "description": "損失函數會計算模型輸出與目標值之間的差距，協助調整模型。"
     },
     {
-      "question": "在神經網路訓練中，從目前的損失值反推回去，找一條最陡峭的向下路徑來調整權重，以最小化損失值的過程，稱為什麼？",
+      "question": "在神經網路訓練中，從目前的損失值反推並調整權重，使損失逐步下降的過程稱為？",
       "options": [
         "梯度下降 (Gradient Descent)",
         "過擬合 (Overfitting)",
@@ -146,10 +146,10 @@
         "正向傳遞 (Forward Propagation)"
       ],
       "answer": 0,
-      "description": "反向傳播的目的就是要從目前的損失值，反推回去，找一條最陡峭的向下路徑...使得損失值愈來愈小，這就是所謂的「梯度下降」(Gradient Descent)。"
+      "description": "梯度下降沿著損失函數下降最快的方向調整參數，以降低誤差。"
     },
     {
-      "question": "如果一個 AI 模型把訓練資料的每個細節都記住了，但遇到新的情況就完全不會處理，這種現象稱為什麼？",
+      "question": "如果模型記住訓練資料的細節，却無法應對新情況，這種現象稱為什麼？",
       "options": [
         "欠擬合 (Underfitting)",
         "過擬合 (Overfitting)",
@@ -157,10 +157,10 @@
         "反向傳播 (Back Propagation)"
       ],
       "answer": 1,
-      "description": "過擬合(overfitting)就像是十長老的學習方式，AI把訓練資料的每個細節都記住了，但遇到新的情況就完全不會處理。"
+      "description": "過擬合代表模型在訓練資料上表現很好，但缺乏泛化能力。"
     },
     {
-      "question": "如果一個 AI 模型的參數太少（腦容量太小），就算給它再多的資料也記不住多少東西，這種現象稱為什麼？",
+      "question": "如果模型的參數太少導致學不到足夠資訊，這種現象稱為什麼？",
       "options": [
         "欠擬合 (Underfitting)",
         "過擬合 (Overfitting)",
@@ -168,10 +168,10 @@
         "交叉驗證 (Cross-validation)"
       ],
       "answer": 0,
-      "description": "如果模型的參數太少（腦容量太小），就算給它再多的資料（再厚的課本），它也記不住多少東西，這就是欠擬合。"
+      "description": "欠擬合表示模型複雜度不足，無法充分描述資料的特徵。"
     },
     {
-      "question": "下列何者不是文本中提到用來避免「過擬合」的方法？",
+      "question": "下列哪一項不是常見的防止過擬合方法？",
       "options": [
         "正則化 (Regularization)",
         "早停法 (Early stopping)",
@@ -179,7 +179,7 @@
         "資料擴增 (Data augmentation)"
       ],
       "answer": 2,
-      "description": "防止欠擬合，我們可以增加模型的複雜度。而正則化、早停法、資料擴增等都是用來防止「過擬合」的。"
+      "description": "為避免過擬合會採用正則化、早停或資料擴增等技巧；增加模型複雜度反而更易過擬合。"
     },
     {
       "question": "卷積神經網路 (CNN) 特別擅長處理哪一類型的資料？",
@@ -190,10 +190,10 @@
         "股票市場數據"
       ],
       "answer": 0,
-      "description": "CNN 特別擅長處理像圖片這種具有「空間結構」的資料。"
+      "description": "CNN 善於捕捉影像等具有空間結構的資料中的局部特徵。"
     },
     {
-      "question": "在 CNN 中，如同「專業找碴小分隊」，負責拿著放大鏡掃描圖片、偵測特定圖案（如直線、圓弧）的層級是？",
+      "question": "在 CNN 中，負責以不同濾鏡掃描影像並偵測特定圖案的層級是？",
       "options": [
         "池化層 (Pooling Layer)",
         "卷積層 (Convolutional Layer)",
@@ -201,10 +201,10 @@
         "輸出層 (Output Layer)"
       ],
       "answer": 1,
-      "description": "第一組：專業「找碴」小分隊（卷積層）...想像派出一堆「偵探」...有的專門找「直線」、有的專門找「橫線」。"
+      "description": "卷積層透過各種卷積核偵測邊緣、角點等局部特徵。"
     },
     {
-      "question": "在 CNN 中，如同「摘要小能手」，負責將偵探地圖化繁為簡、抓重點（例如只保留最大值）的層級是？",
+      "question": "在 CNN 中，負責縮減特徵圖並保留重點資訊的層級是？",
       "options": [
         "池化層 (Pooling Layer)",
         "卷積層 (Convolutional Layer)",
@@ -212,10 +212,10 @@
         "全連接神經網路 (Fully Connected NN)"
       ],
       "answer": 0,
-      "description": "第二組：抓重點「摘要」小能手（池化層）...幫忙抓重點、化繁為簡。這個小能手會把地圖分成一小格一小格，然後在每一格裡只挑出最重要的那個記號。"
+      "description": "池化層會縮小特徵圖大小，保留重要資訊並降低計算量。"
     },
     {
-      "question": "文本提到，深度學習 (Deep Learning) 相較於傳統機器學習的主要優勢是什麼？",
+      "question": "深度學習 (Deep Learning) 相較於傳統機器學習最大的優勢之一是什麼？",
       "options": [
         "只需要很少的訓練資料",
         "訓練速度非常快",
@@ -223,10 +223,10 @@
         "完全不會有「過擬合」的問題"
       ],
       "answer": 2,
-      "description": "深度學習的厲害之處在於...它能夠自動學習這些特徵！...這時研究人員都驚嘆「這個模型可以用了，可是我完全不知道它是怎樣做到的」。"
+      "description": "深度學習能直接從資料中自動找出有效特徵，減少人工設計特徵的需求。"
     },
     {
-      "question": "文本中提到，2015 年發明了「跳層連接」(ResNet)，一口氣將神經網路蓋到 152 層，解決了什麼主要問題？",
+      "question": "2015 年 ResNet 引入的「跳層連接」主要解決了哪項訓練問題？",
       "options": [
         "梯度消失 (Gradient Vanishing)",
         "資料量不足",
@@ -234,10 +234,10 @@
         "過擬合 (Overfitting)"
       ],
       "answer": 0,
-      "description": "再往上蓋就會遇到一個奇怪的「梯度消失」的問題...2015年的ResNet，它發明了「跳層連接」（像是在大樓中加入快速電梯），一口氣蓋到152層！"
+      "description": "跳層連接讓訊號可以跨層流動，減輕深度模型中的梯度消失問題。"
     },
     {
-      "question": "「生成對抗網路」(GAN) 是由哪兩個AI互相較勁組成的？",
+      "question": "生成對抗網路 (GAN) 是由哪兩個模型互相較勁組成的？",
       "options": [
         "卷積層與池化層",
         "生成器 (Generator) 與判別器 (Discriminator)",
@@ -245,10 +245,10 @@
         "智慧代理與環境"
       ],
       "answer": 1,
-      "description": "這個系統由兩個 AI 組成，一個叫「生成器」，另一個叫「判別器」。"
+      "description": "GAN 包含一個產生資料的生成器與一個辨識真假的判別器，兩者彼此競爭共同進步。"
     },
     {
-      "question": "在 GAN 的比喻中，米格倫 (Han van Meegeren) 扮演了什麼角色？",
+      "question": "在 GAN 中，哪個組件負責產生逼真的資料樣本？",
       "options": [
         "判別器 (Discriminator)，負責鑑定真假",
         "生成器 (Generator)，負責製造逼真的仿作",
@@ -256,10 +256,10 @@
         "智慧代理 (Intelligent Agent)，負責與環境互動"
       ],
       "answer": 1,
-      "description": "一個AI扮演「米格倫」，專門製造逼真的仿作（比如假畫）...另一個AI扮演「鑑定師」，負責識破真假。前者是生成器，後者是判別器。"
+      "description": "生成器的目標是產生看起來與真實資料相似的樣本，讓判別器難以分辨。"
     },
     {
-      "question": "文本中提到「深度偽造」(Deepfake) 技術，是哪一種 AI 技術被濫用的隱憂？",
+      "question": "被濫用而引發深度偽造 (Deepfake) 擔憂的 AI 技術是？",
       "options": [
         "卷積神經網路 (CNN)",
         "強化學習 (Reinforcement Learning)",
@@ -267,10 +267,10 @@
         "監督式學習 (Supervised Learning)"
       ],
       "answer": 2,
-      "description": "對抗式學習也帶來一些擔憂...更可怕的是「深度偽造」(Deepfake)技術。這種技術可以讓你的臉出現在你從沒去過的地方。"
+      "description": "Deepfake 多利用對抗式學習架構產生逼真的語音與影像，因此需要留意其濫用風險。"
     },
     {
-      "question": "哪一種機器學習方法，是在沒有標註資料、必須與環境互動的情況下，透過「試錯學習」和「獎勵處罰機制」來學習的？",
+      "question": "哪一種機器學習方法會在沒有標註資料的情況下，透過試錯與獎勵來學習？",
       "options": [
         "監督式學習 (Supervised Learning)",
         "非監督式學習 (Unsupervised Learning)",
@@ -278,10 +278,10 @@
         "自監督學習 (Self-supervised Learning)"
       ],
       "answer": 2,
-      "description": "如果一開始連資料都沒有...這時候就需要用到「強化學習」(Reinforcement Learning)了。強化學習就像是一個「試錯學習」的過程... AI的目標，就是...最大化它能得到的總獎勵。"
+      "description": "強化學習的智慧體透過與環境互動並根據獎勵訊號更新策略。"
     },
     {
-      "question": "在強化學習的「世紀帝國二」例子中，「家裡還有多少木材、食物、黃金」屬於五個核心元素中的哪一個？",
+      "question": "在強化學習的核心元素中，描述系統當前情況的部分屬於哪一個？",
       "options": [
         "智慧代理 (Intelligent Agent)",
         "環境 (Environment)",
@@ -289,10 +289,10 @@
         "動作 (Action)"
       ],
       "answer": 2,
-      "description": "第三是「狀態」（State），這描述了AI當前的處境。在「世紀帝國」裡，狀態可是超級複雜的！包括：家裡還有多少木材、食物、黃金、石頭？"
+      "description": "狀態 (State) 用來描述智慧體所處的環境資訊，例如資源數量或位置。"
     },
     {
-      "question": "在強化學習中，AI 面臨「要探索新的可能性，還是利用已知的好方法？」的難題，這被稱為什麼？",
+      "question": "在強化學習中，智慧體面臨探索新策略與利用已知策略的取捨被稱為什麼？",
       "options": [
         "探索-利用困境 (Exploration-Exploitation Dilemma)",
         "梯度消失問題 (Gradient Vanishing Problem)",
@@ -300,10 +300,10 @@
         "獎勵稀疏性 (Reward Rarity)"
       ],
       "answer": 0,
-      "description": "在強化學習過程中，AI面臨著一個...難題：是要探索新的可能性，還是利用已知的好方法？ 這個問題在技術上被稱為「探索-利用困境」。"
+      "description": "探索-利用困境描述智慧體在嘗試新方法與使用既有高獎勵策略之間需要平衡的難題。"
     },
     {
-      "question": "目前如 ChatGPT、Google Gemini 等 AI 系統，雖然功能強大，但仍被歸類為：",
+      "question": "像 ChatGPT、Google Gemini 等現代系統目前被歸類為哪一種類型的 AI？",
       "options": [
         "通用人工智慧 (AGI)",
         "狹義人工智慧 (Narrow AI)",
@@ -311,10 +311,10 @@
         "偽畫 AI (Forgery AI)"
       ],
       "answer": 1,
-      "description": "我們今天所使用的 AI（像是 OpenAI 的 ChatGPT、Google 的 Gemini...）...仍然被稱為狹義 AI（Narrow AI），因為它們主要針對特定任務或領域進行訓練和優化。"
+      "description": "即使功能強大，這些系統仍專注於特定任務，因此被視為狹義 AI。"
     },
     {
-      "question": "根據文本，「通用人工智慧」(AGI) 與目前 AI 最大的不同在於：",
+      "question": "通用人工智慧 (AGI) 與目前常見的 AI 最大的差異是？",
       "options": [
         "AGI 計算速度更快",
         "AGI 能畫出更逼真的圖片",
@@ -322,10 +322,10 @@
         "AGI 只需要更少的電力"
       ],
       "answer": 2,
-      "description": "AGI 則是一種完全不同層次的智慧體。它能夠真正理解世界和人類...具有自我意識...能夠自主學習和創新...具有人類級別的通用智慧。"
+      "description": "AGI 指能像人類一樣理解多種情境、具備通用智慧並能自主學習的系統。"
     },
     {
-      "question": "電腦以及人工智慧的祖師爺是誰？",
+      "question": "誰被視為現代電腦與人工智慧的奠基者？",
       "options": [
         "圖靈 (Alan Turing)",
         "伊恩·古德費洛 (Ian Goodfellow)",
@@ -333,10 +333,10 @@
         "漢·凡·米格倫 (Han van Meegeren)"
       ],
       "answer": 0,
-      "description": "電腦以及人工智慧的 祖師爺圖靈(Alan Turing) 在1950年就提出了很有趣的圖靈測試。"
+      "description": "艾倫·圖靈提出的理論為現代電腦科學與人工智慧奠定了基礎。"
     },
     {
-      "question": "AI的四個重要特質是學習能力、模式識別、決策能力以及什麼？",
+      "question": "AI 的四個重要特質包含學習能力、模式識別、決策能力以及？",
       "options": [
         "適應能力 (Adaptation)",
         "創造能力 (Creativity)",
@@ -344,7 +344,7 @@
         "社交能力 (Socialization)"
       ],
       "answer": 0,
-      "description": "真正的AI具備一些重要特質...首先是學習能力...接著是適應能力...再來是模式識別...最後是決策能力。"
+      "description": "適應能力讓 AI 能根據環境變化調整行為，是智慧體的重要特質之一。"
     },
     {
       "question": "機器學習是 AI 的一個分支，而什麼又是機器學習的一個分支？",
@@ -355,10 +355,10 @@
         "卷積核 (Convolution Kernel)"
       ],
       "answer": 0,
-      "description": "機器學習(Machine Learning, ML)是人工智慧的一個分支...而神經網路 (Neural Network)又是機器學習的一個分支。"
+      "description": "神經網路屬於機器學習中的一類模型，模仿生物神經系統的結構。"
     },
     {
-      "question": "在神經網路訓練中，根據錯誤反向調整權重的過程稱為？",
+      "question": "在神經網路訓練中，根據錯誤訊號反向調整權重的過程稱為？",
       "options": [
         "反向傳播 (Back Propagation)",
         "正向傳遞 (Forward Propagation)",
@@ -366,10 +366,10 @@
         "模式識別 (Pattern Recognition)"
       ],
       "answer": 0,
-      "description": "然後就來到最重要的「反向傳播」（Back Propagation）階段。系統會像個認真檢討的實習生，從後往前找出問題出在哪裡。"
+      "description": "反向傳播會沿著網路結構將誤差傳回前層，逐步更新權重。"
     },
     {
-      "question": "在 CNN 中，負責偵測特定圖案的小矩陣被稱為什麼？",
+      "question": "在 CNN 中，負責偵測特定圖案的小矩陣稱為什麼？",
       "options": [
         "卷積核 (Convolution Kernel)",
         "池化層 (Pooling Layer)",
@@ -377,7 +377,7 @@
         "樹突 (Dendrite)"
       ],
       "answer": 0,
-      "description": "這些小矩陣就是所謂的「卷積核」(Convolution Kernel)，它們就像是偵探的「專業技能」，專門用來偵測特定的圖案。"
+      "description": "卷積核是小尺寸的濾鏡，用來掃描影像並找出特定特徵。"
     },
     {
       "question": "在 CNN 的池化層中，最常用的方式是？",
@@ -388,10 +388,10 @@
         "隨機池化 (Random Pooling)"
       ],
       "answer": 0,
-      "description": "最大池化（Max Pooling）：就像是在每個小區塊中找出「最可疑」的那個點，保留最大值。這是最常用的方式。"
+      "description": "最大池化會在每個區塊選出最大值，既能保留顯著特徵又能降低維度。"
     },
     {
-      "question": "神經網路層數過多時，數值衰減成零稱為？",
+      "question": "神經網路層數過多時，梯度逐漸趨近零的現象稱為？",
       "options": [
         "梯度消失 (Gradient Vanishing)",
         "梯度爆炸 (Gradient Explosion)",
@@ -399,7 +399,7 @@
         "欠擬M合 (Underfitting)"
       ],
       "answer": 0,
-      "description": "所謂的「梯度消失」就是在神經網路中傳遞的數值在傳了若干層之後衰減成零了。"
+      "description": "梯度消失會讓早期層的權重難以更新，使深度網路難以訓練。"
     },
     {
       "question": "「生成對抗網路」 (GAN) 的概念是由誰提出的？",
@@ -410,10 +410,10 @@
         "Geoffrey Hinton"
       ],
       "answer": 0,
-      "description": "這就是著名的「生成對抗網路」(Generative Adversarial Network, GAN)的概念，由Ian Goodfellow在2014年提出。"
+      "description": "Ian Goodfellow 於 2014 年首次提出生成對抗網路的概念。"
     },
     {
-      "question": "在強化學習中，負責學習的 AI 對手被稱為？",
+      "question": "在強化學習中，負責採取行動並學習策略的實體稱為？",
       "options": [
         "智慧代理 (Intelligent Agent)",
         "環境 (Environment)",
@@ -421,10 +421,10 @@
         "生成器 (Generator)"
       ],
       "answer": 0,
-      "description": "首先是「智慧代理」（Intelligent Agent），這就是那個要學習怎麼打贏你的AI對手啦！"
+      "description": "智慧代理會根據觀察到的狀態選擇動作並更新策略。"
     },
     {
-      "question": "在強化學習中，將經驗存儲在記憶庫中再隨機抽樣學習的機制，稱為？",
+      "question": "在強化學習中，將經驗存入記憶庫並隨機抽樣學習的技巧稱為？",
       "options": [
         "經驗回放 (Experience Replay)",
         "自監督學習 (Self-supervised Learning)",
@@ -432,6 +432,6 @@
         "探索-利用 (Exploration-Exploitation)"
       ],
       "answer": 0,
-      "description": "為了提高學習效率，現代的強化學習算法常常使用「經驗回放」（Experience Replay）機制。...AI會將經歷過的...組合存儲在一個記憶庫中。在學習時，它會隨機抽取一些經驗進行學習。"
+      "description": "經驗回放會儲存歷史資料，再隨機抽樣訓練，降低樣本之間的相關性並提升學習穩定度。"
     }
   ]
